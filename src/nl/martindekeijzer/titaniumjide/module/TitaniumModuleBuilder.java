@@ -2,6 +2,7 @@ package nl.martindekeijzer.titaniumjide.module;
 
 import com.intellij.icons.AllIcons;
 import com.intellij.openapi.module.WebModuleBuilder;
+import icons.TitaniumIcons;
 
 import javax.swing.*;
 
@@ -10,6 +11,5 @@ import javax.swing.*;
  */
 public class TitaniumModuleBuilder extends WebModuleBuilder {
     public static final String GROUP_NAME = "Titanium";
-    // @todo change icon
-    public static final Icon ICON = AllIcons.Nodes.PpWeb;
+    public static final Icon ICON = TitaniumIcons.Titanium;
 }
