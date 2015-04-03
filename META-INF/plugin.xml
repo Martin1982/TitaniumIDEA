@@ -21,7 +21,18 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+    <sdkType implementation="nl.martindekeijzer.titaniumjide.sdk.TitaniumSdkType"/>
+
+    <editorSmartKeysConfigurable instance="nl.martindekeijzer.titaniumjide.settings.TitaniumConfigurationPage"/>
+    <defaultLiveTemplatesProvider implementation="nl.martindekeijzer.titaniumjide.TitaniumTemplatesProvider"/>
+    <lang.syntaxHighlighterFactory key="Titanium" implementationClass="nl.martindekeijzer.titaniumjide.lang.TitaniumSyntaxHighlighterFactory"/>
+
+    <directoryProjectGenerator implementation="nl.martindekeijzer.titaniumjide.TitaniumProjectGenerator"/>
     <projectTemplatesFactory implementation="nl.martindekeijzer.titaniumjide.TitaniumTemplateFactory"/>
+
+    <applicationService serviceInterface="nl.martindekeijzer.titaniumjide.settings.TitaniumConfig"
+                        serviceImplementation="nl.martindekeijzer.titaniumjide.settings.TitaniumConfig" />
+    <applicationConfigurable instance="nl.martindekeijzer.titaniumjide.settings.TitaniumSDKConfigurable"/>
   </extensions>
 
   <application-components>

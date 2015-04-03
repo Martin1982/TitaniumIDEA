@@ -33,7 +33,7 @@ public class TitaniumProjectGenerator extends AbstractGithubTagDownloadedProject
     @Nullable
     @Override
     public String getDescription() {
-        return "<html>This project is a KitchenSink checkout for Appcelerator Titanium Mobile</html>";
+        return "<html>This project is a KitchenSink checkout for Appcelerator Titanium Mobile, it will soon be replaced by the Classic and Alloy variants</html>";
     }
 
     @Override
